@@ -1,0 +1,307 @@
+/* 초기화 */
+*{
+    margin: 0;
+    padding: 0;
+    /* 가로세로 길이 기준을 보더박스 기준 */
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+#main-page{
+    background: url(img/airbnbBG.jpg) center center no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+
+.main-navi{
+    /* 화면상단에 붙어있는 포지션 */
+    position: sticky;
+    top: 0;
+    background-color: white;
+    height: 80px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-navi .logo{
+    font-size: 25px;
+    height: 80px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+
+.main-navi .logo i {
+    font-size: 40px;
+    position: relative;
+    top: 7px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.main-navi .logo a{
+    text-decoration: none;
+    color: #222;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding-bottom: 7px;
+}
+
+.menu .hostdg{
+    font-weight: 550;
+}
+
+/* .main-navi .menuset{
+    border: rgb(196, 196, 196) solid 0.8px;
+    border-radius: 15px;
+    padding: 3px 10px;
+} */
+
+.main-navi .menu{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.main-navi .search .btn{
+    height: 48px;
+    width: 300px;
+    border-radius: 30px;
+    padding: 0 25px;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: white;
+    outline: none;
+}
+
+.main-navi .search .btn:hover{
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.15); /* rgba에서 a는 투명도 */
+}
+
+.main-navi .search .bicon{
+    background-color: rgb(255, 86, 117);
+    color: white;
+    border-radius: 60%; /* 원 */
+    padding: 6px 9px;
+}
+
+.main-navi .menu{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.box{
+    width: 1600px;
+    height: 364px;
+    padding: 12% 80px;
+}
+
+.box h1{
+    font-size: 60px;
+}
+
+.box p{
+    margin-top: 3px;
+    font-size: 21px;
+}
+
+.box button{
+    font-size: 15px;
+    background-color: rgb(36, 36, 36);
+    border-color: rgb(36, 36, 36);
+    border-radius: 7px;
+    color: rgb(233, 233, 233);
+    padding: 6px 12px;
+    margin: 10px 0px;
+}
+/* 첫페이지 끝 */
+
+
+/* 둘러보기 섹션 */
+#around{
+    width: 100%;
+}
+
+#around h1{
+    margin-top: 60px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#around .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 90px 90px;
+}
+
+#around img{
+    margin-right: 15px;
+    width: 72px;
+    height: 72px;
+    border-radius: 5px;
+}
+
+#around .item{
+    display: flex;
+    align-items: center;
+}
+
+/* 둘러보기 섹션 끝 */
+
+
+/* 살아보기 섹션 */
+section{
+    align-items: center;
+    padding: 0 80px;
+    margin-top: 50px;
+}
+
+#live h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#live .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#live img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#live div{
+    font-size: 18px;
+    font-weight: 900;
+    padding: 10px 0;
+}
+/* 살아보기 섹션 끝 */
+
+
+/* 호스트 되어보기 */
+#hostbox{
+    position: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    width: 91vw;
+    height: 40vh;
+    background: url(img/hostbox.webp) center center no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+#hostbox div{
+    padding-top: 8vh;
+}
+
+#hostbox h1{
+    color: rgb(228, 228, 228);
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 10px;
+}
+
+#hostbox p{
+    color: rgb(228, 228, 228);
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+
+#hostbox button{
+    width: 163px;
+    height: 48px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+/* Footer */
+
+footer{
+    border-top: solid rgb(192, 192, 192) 1px;
+    padding-top: 10px;
+    background-color: rgb(226, 226, 226);
+}
+
+
+
+footer .gridul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer h4{
+    margin-bottom: 25px;
+}
+
+footer a{
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+footer hr{
+    border:0;
+    height: 1px;
+    background: rgb(192, 192, 192);
+    margin-top: 30px;
+}
+
+footer .footerul2{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+footer .footerul{
+    display: flex;
+    list-style: none;
+    letter-spacing: 20px;
+}
+
+footer .footerul2 a{
+    padding-right: 40px;
+    font-size: 15px;
+}
+
+footer .copyright{
+    width:200px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+}
+
+footer .footermenu{
+    width:600px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom: 30px;
+}
+
+footer .footermenu a{
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.copyright a{
+    font-size: 20px;
+}
